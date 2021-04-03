@@ -8,14 +8,17 @@ The weighting strategy-based PCA procedure in PCA-BO is used for dimensionality 
 
 > Elena Raponi, Hao Wang, Mariusz Bujny, Simonetta Boria, Carola Doerr: **High Dimensional Bayesian Optimization Assisted by Principal Component Analysis**, Parallel Problem Solving from Nature (PPSN) 2020: 169-183, [link](https://arxiv.org/abs/2007.00925)
 
+The source code highly depends on the flacco package:
+
+> Pascal Kerschke and Heike Trautmann, **Comprehensive Feature-Based Landscape Analysis of Continuous and Constrained Optimization Problems Using the R-package flacco**. In Applications in Statistical Computing - From Music Data Analysis to Industrial Quality Improvement, 93-123 (2019), [link](https://arxiv.org/abs/1708.05258)
+ 
+The source code is also based on the COCO framework:
+
+> Nikolaus Hansen, Anne Auger, Raymond Ros, Olaf Mersmann, Tea Tu\check{s}ar, and Dimo Brockhoff, **COCO: A Platform for Comparing Continuous Optimizers in a Black-Box Setting**, Optimization Methods and Software, 36(1): 114-144 (2021), [link](https://arxiv.org/abs/1603.08785)
+
 # Requirements
 
 This code require R (=>3.6), Python (=>3.8), numpy, sklearn, and pyDOE. In addition, this code require the [flacco](https://github.com/kerschke/flacco) package (R), the [pflacco](https://github.com/Reiyan/pflacco) interface (Python), and the [cocoex](https://github.com/numbbo/coco) module (Python). Optionally, this code require [the Torque manager](https://github.com/adaptivecomputing/torque) for a pseudo parallel processing.
-
-## References:
-
-> Pascal Kerschke and Heike Trautmann, **Comprehensive Feature-Based Landscape Analysis of Continuous and Constrained Optimization Problems Using the R-package flacco**. In Applications in Statistical Computing - From Music Data Analysis to Industrial Quality Improvement, 93-123 (2019), [link](https://arxiv.org/abs/1708.05258)
-> Nikolaus Hansen, Anne Auger, Raymond Ros, Olaf Mersmann, Tea Tu\check{s}ar, and Dimo Brockhoff, **COCO: A Platform for Comparing Continuous Optimizers in a Black-Box Setting**, Optimization Methods and Software, 36(1): 114-144 (2021), [link](https://arxiv.org/abs/1603.08785)
 
 # Usage
 
