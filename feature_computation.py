@@ -95,6 +95,9 @@ if __name__ == '__main__':
                         feature_dir_path = os.path.join('./ela_feature_dataset', sample_method)                    
                         os.makedirs(feature_dir_path, exist_ok=True)
                         feature_file_path = os.path.join(feature_dir_path, '{}_{}_f{}_DIM{}_i{}.csv'.format(ela_feature_class, bbob_suite, fun_id, dim, instance_id))
+                        if dim_redu == 'pca':
+                            feature_file_path = os.path.join(feature_dir_path, 'tpca{}_{}_{}_f{}_DIM{}_i{}.csv'.format(n_pca_components, ela_feature_class, bbob_suite, fun_id, dim, instance_id))
+
                         compute_features(ela_feature_class, sample_data_file_path, feature_file_path, dim_redu, n_pca_components)
                         print("Done: Feature={}, dimension={},  f={}, instance ID={}".format(ela_feature_class, dim, fun_id, instance_id))                    
     else:
@@ -123,9 +126,8 @@ if __name__ == '__main__':
             feature_dir_path = os.path.join('./ela_feature_dataset', sample_method)                    
             os.makedirs(feature_dir_path, exist_ok=True)
             feature_file_path = os.path.join(feature_dir_path, '{}_{}_f{}_DIM{}_i{}.csv'.format(ela_feature_class, bbob_suite, fun_id, dim, instance_id))
-
             if dim_redu == 'pca':
-                feature_file_path = os.path.join(feature_dir_path, 'tpca{}_{}_f{}_DIM{}_i{}.csv'.format(n_pca_components, ela_feature_class, bbob_suite, fun_id, dim, instance_id))
+                feature_file_path = os.path.join(feature_dir_path, 'tpca{}_{}_{}_f{}_DIM{}_i{}.csv'.format(n_pca_components, ela_feature_class, bbob_suite, fun_id, dim, instance_id))
 
             compute_features(ela_feature_class, sample_data_file_path, feature_file_path, dim_redu=dim_redu, n_pca_components=n_pca_components)
             print("Done: Feature={}, dimension={},  f={}, instance ID={}".format(ela_feature_class, dim, fun_id, instance_id))
