@@ -40,7 +40,7 @@ Next, features are computed based on the sample for each function instance. The 
 $ python feature_computation.py
 ```
 
-Although the above command performs a feature computation in a sequential manner, it is very slow. Optionally, features can be computed in a pseudo parallel manner by using [the Torque manager](https://github.com/adaptivecomputing/torque). After setting "run_by_torque" (line 71 in feature_computation.py) to True, please run the following command:
+Although the above command performs a feature computation in a sequential manner, it is very slow. Optionally, features can be computed in a pseudo parallel manner by using [the Torque manager](https://github.com/adaptivecomputing/torque). After setting ''run_by_torque'' in feature_computation.py to True, please run the following command:
 
 ```
 $ python throw_job_fc.py

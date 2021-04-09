@@ -57,7 +57,7 @@ def classification_lopo_cv(res_class_file_path, table_data_file_path, dim, left_
         fh.write(str(score))
                 
 if __name__ == '__main__':
-    feature_set_name = 'lhs_multiplier50_sid0_basic_ela_distr_pca_limo_ic_disp_nbc_ela_level_ela_meta_dims2_3_5'
+    feature_set_name = 'lhs_multiplier50_sid0_basic_ela_distr_pca_limo_ic_disp_nbc_tpca2_ela_level_tpca2_ela_meta_dims3_5_10_20_40_80_160_320_640'
     table_data_file_path = os.path.join('./feature_table_data', '{}.csv'.format(feature_set_name))
     cross_valid_type = 'lopo_cv'
     res_class_dir_path = os.path.join('classification_results', feature_set_name)

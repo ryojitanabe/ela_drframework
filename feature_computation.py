@@ -59,10 +59,17 @@ def compute_features(ela_feature_class, sample_data_file_path, feature_file_path
     except rpy2.rinterface_lib.embedded.RRuntimeError as e:
         print(e)
 
-    with open(feature_file_path, 'w') as fh:
-        for key, value in feature_dict.items():
-            fh.write('{},{}\n'.format(key, value))            
-            
+
+    if dim_redu == 'pca':
+        with open(feature_file_path, 'w') as fh:
+            for key, value in feature_dict.items():
+                fh.write('tpca{}_{},{}\n'.format(n_pca_components, key, value))            
+    else:
+        with open(feature_file_path, 'w') as fh:
+            for key, value in feature_dict.items():
+                fh.write('{},{}\n'.format(key, value))            
+
+                
 if __name__ == '__main__':
     # Compute features by using pflacco
     sample_method = 'lhs_multiplier50_sid0'
