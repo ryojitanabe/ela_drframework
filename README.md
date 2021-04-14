@@ -66,8 +66,13 @@ $ python property_classification.py
 
 Classification can also be performed in a pseudo parallel manner by Torque. After setting "run_by_torque" (line 66 in property_classification.py) to True, please run the following command:
 
+
+## 5. Show the average accuracy
+
+The following command calculates the average of the accuracy values over the 24 BBOB functions for each dimension and each classification task.
+
 ```
-$ python throw_job_fc.py
+$ python stat_accuracy.py
 ```
 
 ## Note
