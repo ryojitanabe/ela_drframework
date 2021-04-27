@@ -2,7 +2,7 @@
 
 This repository provides the source code to reproduce results shown in the following paper:
 
-> Ryoji Tanabe, **Towards Exploratory Landscape Analysis for Large-scale Optimization: A Dimensionality Reduction Framework**, GECCO2021, pdf, [exdata](https://drive.google.com/drive/folders/1MRiiirvi-bJmaO56h3xlZrGITR4oERIP?usp=sharing)
+> Ryoji Tanabe, **Towards Exploratory Landscape Analysis for Large-scale Optimization: A Dimensionality Reduction Framework**, GECCO2021, [pdf](https://arxiv.org/abs/2104.10301), [exdata](https://drive.google.com/drive/folders/1MRiiirvi-bJmaO56h3xlZrGITR4oERIP?usp=sharing)
 
 The weighting strategy-based PCA procedure in PCA-BO is used for dimensionality reduction. I used [the code of PCA-BO](https://github.com/wangronin/Bayesian-Optimization) provided by Dr. Hao Wang. Details of PCA-BO can be found in the following paper:
 
